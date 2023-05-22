@@ -1,17 +1,17 @@
 <script>
-	import Counter from './Counter.svelte';
+	import Chat from './Chat.svelte';
 </script>
 
 <svelte:head>
 	<title>joseberr.io</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Jose Berrio" />
 </svelte:head>
 
 <section>
 	<h1>
 		Welcome
 	</h1>
-	<Counter />
+	<Chat />
 </section>
 
 <style>
@@ -27,11 +27,4 @@
 		width: 100%;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
