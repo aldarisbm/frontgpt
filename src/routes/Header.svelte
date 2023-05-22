@@ -2,12 +2,14 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import linkedin from '$lib/images/linkedin.svg';
+	import stackoverflow from '$lib/images/stackoverflow.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="https://joseberr.io">
+			<img src={logo} alt="Jose Berrio" />
 		</a>
 	</div>
 
@@ -17,13 +19,10 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/">chat</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+				<a href="/manage">manage</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,8 +31,14 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/aldarisbm">
 			<img src={github} alt="GitHub" />
+		</a>
+		<a href="https://linkedin.com/in/aldarisbm">
+			<img src={linkedin} alt="LinkedIn" />
+		</a>
+		<a href="https://stackoverflow.com/users/9302254/aldarisbm">
+			<img src={stackoverflow} alt="StackOverflow" />
 		</a>
 	</div>
 </header>
